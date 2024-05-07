@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1706.9
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaytechBackend", "BaytechBackend.csproj", "{7E51C1F7-E4AD-45B7-B9D3-9A045D02F562}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7E51C1F7-E4AD-45B7-B9D3-9A045D02F562}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E51C1F7-E4AD-45B7-B9D3-9A045D02F562}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E51C1F7-E4AD-45B7-B9D3-9A045D02F562}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E51C1F7-E4AD-45B7-B9D3-9A045D02F562}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C8B31B06-B104-40B0-B6B7-B2381B83BA30}
+	EndGlobalSection
+EndGlobal
