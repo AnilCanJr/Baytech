@@ -1,34 +1,39 @@
-﻿<Properties StartupConfiguration="{7E51C1F7-E4AD-45B7-B9D3-9A045D02F562}|https">
+﻿<Properties StartupConfiguration="{7E51C1F7-E4AD-45B7-B9D3-9A045D02F562}|http">
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.BaytechBackend PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ChatHub.cs">
     <Files>
-      <File FileName="BaytechService.cs" Line="1" Column="1" />
       <File FileName="Controllers/BaytechController.cs" />
-      <File FileName="Entities/Group.cs" Line="1" Column="1" />
-      <File FileName="UserConnection.cs" Line="12" Column="1" />
-      <File FileName="Program.cs" Line="28" Column="24" />
-      <File FileName="ChatHub.cs" Line="17" Column="55" />
-      <File FileName="SharedDB.cs" Line="14" Column="1" />
+      <File FileName="DTO's/IdDTO.cs" />
+      <File FileName="DTO's/SignUpDTO.cs" />
+      <File FileName="DTO's/SignInDTO.cs" />
+      <File FileName="DTO's/PreferenceDTO.cs" />
+      <File FileName="DTO's/FriendRequestDTO.cs" />
+      <File FileName="ChatHub.cs" Line="70" Column="54" />
+      <File FileName="UserConnection.cs" />
+      <File FileName="WeatherForecast.cs" />
+      <File FileName="Program.cs" Line="14" Column="1" />
+      <File FileName="BaytechDbContext.cs" Line="20" Column="57" />
+      <File FileName="appsettings.json" />
+      <File FileName="Controllers/WeatherForecastController.cs" />
+      <File FileName="BaytechService.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="BaytechBackend" expanded="True">
-            <Node name="BaytechBackend" expanded="True">
+          <Node name="BaytechBackend">
+            <Node name="BaytechBackend">
               <Node name="Controllers" expanded="True" />
-              <Node name="DTO's" expanded="True" />
-              <Node name="Entities" expanded="True" />
-              <Node name="Program.cs" selected="True" />
+              <Node name="ChatHub.cs" selected="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.BaytechBackend PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MultiItemStartupConfigurations />
 </Properties>

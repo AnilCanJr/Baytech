@@ -28,8 +28,14 @@ builder.Services.AddCors(options =>
 builder.Services.AddIdentity<User, Role>().AddEntityFrameworkStores<BaytechDbContext>();
 builder.Services.AddSingleton<IDictionary<string, UserConnection>>(opts => new Dictionary<string, UserConnection>());
 builder.Services.AddSignalR();
-
 builder.Services.AddScoped<BaytechService>();
+
+builder.Services.Configure<CookiePolicyOptions>(options =>
+{
+    options.CheckConsentNeeded = context => true;
+    options.MinimumSameSitePolicy = SameSiteMode.Lax;
+});
+
 
 var app = builder.Build();
 
@@ -48,6 +54,7 @@ app.MapHub<ChatHub>("/chat");
 //{
 //    endpoints.MapHub<ChatHub>("/chat");
 //});
+
 
 app.UseHttpsRedirection();
 

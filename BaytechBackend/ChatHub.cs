@@ -62,7 +62,7 @@ namespace BaytechBackend
 
             _connections[Context.ConnectionId] = userConnection;
 
-            await Clients.Group(userConnection.Room).SendAsync("ReceiveMessage", _botUser, $"{userConnection.User} has joined {userConnection.Room}");
+            //await Clients.Group(userConnection.Room).SendAsync("ReceiveMessage", _botUser, $"{userConnection.User} has joined {userConnection.Room}");
 
             await SendUsersConnected(userConnection.Room);
         }
@@ -73,6 +73,7 @@ namespace BaytechBackend
             {
                 await Clients.Group(userConnection.Room).SendAsync("ReceiveMessage", userConnection.User, message);
                 Console.WriteLine(message);
+                
             }
         }
 
@@ -81,7 +82,7 @@ namespace BaytechBackend
             var users = _connections.Values
                 .Where(c => c.Room == room)
                 .Select(c => c.User);
-
+            
             return Clients.Group(room).SendAsync("UsersInRoom", users);
         }
 

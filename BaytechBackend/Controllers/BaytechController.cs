@@ -3,6 +3,7 @@ using BaytechBackend.DTO_s;
 using BaytechBackend.DTOs;
 using BaytechBackend.Entities;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Net.Http.Headers;
 
 namespace BaytechBackend.Controllers
 {
@@ -10,22 +11,31 @@ namespace BaytechBackend.Controllers
     [ApiController]
     public class BaytechController:ControllerBase
 	{
+        public CookieOptions _options; 
         private BaytechService _baytechService;
         public BaytechController(BaytechService baytechService)
         {
+            _options= new CookieOptions(); 
+            _options.HttpOnly = false;
+            _options.Secure = false;
             _baytechService = baytechService;
         }
         
         [HttpPost("SignUp")]
         public async Task SignUp(SignUpDTO dto)
         {
+            Response.Cookies.Append("Id", "emrekocadere", _options);
             await _baytechService.SignUp(dto);
         }
 
         [HttpPost("SignIn")]
         public async Task<Microsoft.AspNetCore.Identity.SignInResult> SignIn(SignInDTO dto)
         {
-             var resultr =await _baytechService.SignIn(dto);
+            _options.Expires = DateTime.Now.AddDays(1);
+            Response.Cookies.Append("SomeCookie", "asdasd", _options);
+            
+            var resultr =await _baytechService.SignIn(dto);
+
             return resultr;
         }
 
@@ -60,6 +70,17 @@ namespace BaytechBackend.Controllers
           return _baytechService.ReturnFriends(id);
 
         }
+
+
+        [HttpPost("ReturnGroups")]
+        public List<Group> ReturnGroups(IdDTO id)
+        {
+            return _baytechService.ReturnGroups(id.Id);
+
+        }
+
+
+
 
 
     }

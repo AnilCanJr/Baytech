@@ -42,53 +42,103 @@
 /Users/emremac/Desktop/Baytech/BaytechBackend/bin/Debug/net7.0/Microsoft.Extensions.DependencyModel.dll
 /Users/emremac/Desktop/Baytech/BaytechBackend/bin/Debug/net7.0/Mono.TextTemplating.dll
 /Users/emremac/Desktop/Baytech/BaytechBackend/bin/Debug/net7.0/System.CodeDom.dll
-C:\Users\Monster\Desktop\yeniproje\BaytechBackend\bin\Debug\net7.0\appsettings.Development.json
-C:\Users\Monster\Desktop\yeniproje\BaytechBackend\bin\Debug\net7.0\appsettings.json
-C:\Users\Monster\Desktop\yeniproje\BaytechBackend\bin\Debug\net7.0\BaytechBackend.exe
-C:\Users\Monster\Desktop\yeniproje\BaytechBackend\bin\Debug\net7.0\BaytechBackend.deps.json
-C:\Users\Monster\Desktop\yeniproje\BaytechBackend\bin\Debug\net7.0\BaytechBackend.runtimeconfig.json
-C:\Users\Monster\Desktop\yeniproje\BaytechBackend\bin\Debug\net7.0\BaytechBackend.dll
-C:\Users\Monster\Desktop\yeniproje\BaytechBackend\bin\Debug\net7.0\BaytechBackend.pdb
-C:\Users\Monster\Desktop\yeniproje\BaytechBackend\bin\Debug\net7.0\Humanizer.dll
-C:\Users\Monster\Desktop\yeniproje\BaytechBackend\bin\Debug\net7.0\Microsoft.AspNet.SignalR.Core.dll
-C:\Users\Monster\Desktop\yeniproje\BaytechBackend\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
-C:\Users\Monster\Desktop\yeniproje\BaytechBackend\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
-C:\Users\Monster\Desktop\yeniproje\BaytechBackend\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
-C:\Users\Monster\Desktop\yeniproje\BaytechBackend\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
-C:\Users\Monster\Desktop\yeniproje\BaytechBackend\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
-C:\Users\Monster\Desktop\yeniproje\BaytechBackend\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
-C:\Users\Monster\Desktop\yeniproje\BaytechBackend\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
-C:\Users\Monster\Desktop\yeniproje\BaytechBackend\bin\Debug\net7.0\Microsoft.OpenApi.dll
-C:\Users\Monster\Desktop\yeniproje\BaytechBackend\bin\Debug\net7.0\Microsoft.Owin.dll
-C:\Users\Monster\Desktop\yeniproje\BaytechBackend\bin\Debug\net7.0\Microsoft.Owin.Security.dll
-C:\Users\Monster\Desktop\yeniproje\BaytechBackend\bin\Debug\net7.0\Mono.TextTemplating.dll
-C:\Users\Monster\Desktop\yeniproje\BaytechBackend\bin\Debug\net7.0\Newtonsoft.Json.dll
-C:\Users\Monster\Desktop\yeniproje\BaytechBackend\bin\Debug\net7.0\Npgsql.dll
-C:\Users\Monster\Desktop\yeniproje\BaytechBackend\bin\Debug\net7.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
-C:\Users\Monster\Desktop\yeniproje\BaytechBackend\bin\Debug\net7.0\Owin.dll
-C:\Users\Monster\Desktop\yeniproje\BaytechBackend\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
-C:\Users\Monster\Desktop\yeniproje\BaytechBackend\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
-C:\Users\Monster\Desktop\yeniproje\BaytechBackend\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-C:\Users\Monster\Desktop\yeniproje\BaytechBackend\bin\Debug\net7.0\System.CodeDom.dll
-C:\Users\Monster\Desktop\yeniproje\BaytechBackend\bin\Debug\net7.0\System.Net.WebSockets.WebSocketProtocol.dll
-C:\Users\Monster\Desktop\yeniproje\BaytechBackend\obj\Debug\net7.0\BaytechBackend.csproj.AssemblyReference.cache
-C:\Users\Monster\Desktop\yeniproje\BaytechBackend\obj\Debug\net7.0\BaytechBackend.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Monster\Desktop\yeniproje\BaytechBackend\obj\Debug\net7.0\BaytechBackend.AssemblyInfoInputs.cache
-C:\Users\Monster\Desktop\yeniproje\BaytechBackend\obj\Debug\net7.0\BaytechBackend.AssemblyInfo.cs
-C:\Users\Monster\Desktop\yeniproje\BaytechBackend\obj\Debug\net7.0\BaytechBackend.csproj.CoreCompileInputs.cache
-C:\Users\Monster\Desktop\yeniproje\BaytechBackend\obj\Debug\net7.0\BaytechBackend.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\Monster\Desktop\yeniproje\BaytechBackend\obj\Debug\net7.0\BaytechBackend.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\Monster\Desktop\yeniproje\BaytechBackend\obj\Debug\net7.0\staticwebassets\msbuild.BaytechBackend.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\Monster\Desktop\yeniproje\BaytechBackend\obj\Debug\net7.0\staticwebassets\msbuild.build.BaytechBackend.props
-C:\Users\Monster\Desktop\yeniproje\BaytechBackend\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.BaytechBackend.props
-C:\Users\Monster\Desktop\yeniproje\BaytechBackend\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.BaytechBackend.props
-C:\Users\Monster\Desktop\yeniproje\BaytechBackend\obj\Debug\net7.0\staticwebassets.pack.json
-C:\Users\Monster\Desktop\yeniproje\BaytechBackend\obj\Debug\net7.0\staticwebassets.build.json
-C:\Users\Monster\Desktop\yeniproje\BaytechBackend\obj\Debug\net7.0\staticwebassets.development.json
-C:\Users\Monster\Desktop\yeniproje\BaytechBackend\obj\Debug\net7.0\scopedcss\bundle\BaytechBackend.styles.css
-C:\Users\Monster\Desktop\yeniproje\BaytechBackend\obj\Debug\net7.0\BaytechBackend.csproj.CopyComplete
-C:\Users\Monster\Desktop\yeniproje\BaytechBackend\obj\Debug\net7.0\BaytechBackend.dll
-C:\Users\Monster\Desktop\yeniproje\BaytechBackend\obj\Debug\net7.0\refint\BaytechBackend.dll
-C:\Users\Monster\Desktop\yeniproje\BaytechBackend\obj\Debug\net7.0\BaytechBackend.pdb
-C:\Users\Monster\Desktop\yeniproje\BaytechBackend\obj\Debug\net7.0\BaytechBackend.genruntimeconfig.cache
-C:\Users\Monster\Desktop\yeniproje\BaytechBackend\obj\Debug\net7.0\ref\BaytechBackend.dll
+C:/Users/Monster/Desktop/yeniproje/BaytechBackend/bin/Debug/net7.0/appsettings.Development.json
+C:/Users/Monster/Desktop/yeniproje/BaytechBackend/bin/Debug/net7.0/appsettings.json
+C:/Users/Monster/Desktop/yeniproje/BaytechBackend/bin/Debug/net7.0/BaytechBackend.exe
+C:/Users/Monster/Desktop/yeniproje/BaytechBackend/bin/Debug/net7.0/BaytechBackend.deps.json
+C:/Users/Monster/Desktop/yeniproje/BaytechBackend/bin/Debug/net7.0/BaytechBackend.runtimeconfig.json
+C:/Users/Monster/Desktop/yeniproje/BaytechBackend/bin/Debug/net7.0/BaytechBackend.dll
+C:/Users/Monster/Desktop/yeniproje/BaytechBackend/bin/Debug/net7.0/BaytechBackend.pdb
+C:/Users/Monster/Desktop/yeniproje/BaytechBackend/bin/Debug/net7.0/Humanizer.dll
+C:/Users/Monster/Desktop/yeniproje/BaytechBackend/bin/Debug/net7.0/Microsoft.AspNet.SignalR.Core.dll
+C:/Users/Monster/Desktop/yeniproje/BaytechBackend/bin/Debug/net7.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:/Users/Monster/Desktop/yeniproje/BaytechBackend/bin/Debug/net7.0/Microsoft.AspNetCore.OpenApi.dll
+C:/Users/Monster/Desktop/yeniproje/BaytechBackend/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.dll
+C:/Users/Monster/Desktop/yeniproje/BaytechBackend/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+C:/Users/Monster/Desktop/yeniproje/BaytechBackend/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Design.dll
+C:/Users/Monster/Desktop/yeniproje/BaytechBackend/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Relational.dll
+C:/Users/Monster/Desktop/yeniproje/BaytechBackend/bin/Debug/net7.0/Microsoft.Extensions.DependencyModel.dll
+C:/Users/Monster/Desktop/yeniproje/BaytechBackend/bin/Debug/net7.0/Microsoft.OpenApi.dll
+C:/Users/Monster/Desktop/yeniproje/BaytechBackend/bin/Debug/net7.0/Microsoft.Owin.dll
+C:/Users/Monster/Desktop/yeniproje/BaytechBackend/bin/Debug/net7.0/Microsoft.Owin.Security.dll
+C:/Users/Monster/Desktop/yeniproje/BaytechBackend/bin/Debug/net7.0/Mono.TextTemplating.dll
+C:/Users/Monster/Desktop/yeniproje/BaytechBackend/bin/Debug/net7.0/Newtonsoft.Json.dll
+C:/Users/Monster/Desktop/yeniproje/BaytechBackend/bin/Debug/net7.0/Npgsql.dll
+C:/Users/Monster/Desktop/yeniproje/BaytechBackend/bin/Debug/net7.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:/Users/Monster/Desktop/yeniproje/BaytechBackend/bin/Debug/net7.0/Owin.dll
+C:/Users/Monster/Desktop/yeniproje/BaytechBackend/bin/Debug/net7.0/Swashbuckle.AspNetCore.Swagger.dll
+C:/Users/Monster/Desktop/yeniproje/BaytechBackend/bin/Debug/net7.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+C:/Users/Monster/Desktop/yeniproje/BaytechBackend/bin/Debug/net7.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+C:/Users/Monster/Desktop/yeniproje/BaytechBackend/bin/Debug/net7.0/System.CodeDom.dll
+C:/Users/Monster/Desktop/yeniproje/BaytechBackend/bin/Debug/net7.0/System.Net.WebSockets.WebSocketProtocol.dll
+C:/Users/Monster/Desktop/yeniproje/BaytechBackend/obj/Debug/net7.0/BaytechBackend.csproj.AssemblyReference.cache
+C:/Users/Monster/Desktop/yeniproje/BaytechBackend/obj/Debug/net7.0/BaytechBackend.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/Monster/Desktop/yeniproje/BaytechBackend/obj/Debug/net7.0/BaytechBackend.AssemblyInfoInputs.cache
+C:/Users/Monster/Desktop/yeniproje/BaytechBackend/obj/Debug/net7.0/BaytechBackend.AssemblyInfo.cs
+C:/Users/Monster/Desktop/yeniproje/BaytechBackend/obj/Debug/net7.0/BaytechBackend.csproj.CoreCompileInputs.cache
+C:/Users/Monster/Desktop/yeniproje/BaytechBackend/obj/Debug/net7.0/BaytechBackend.MvcApplicationPartsAssemblyInfo.cs
+C:/Users/Monster/Desktop/yeniproje/BaytechBackend/obj/Debug/net7.0/BaytechBackend.MvcApplicationPartsAssemblyInfo.cache
+C:/Users/Monster/Desktop/yeniproje/BaytechBackend/obj/Debug/net7.0/staticwebassets/msbuild.BaytechBackend.Microsoft.AspNetCore.StaticWebAssets.props
+C:/Users/Monster/Desktop/yeniproje/BaytechBackend/obj/Debug/net7.0/staticwebassets/msbuild.build.BaytechBackend.props
+C:/Users/Monster/Desktop/yeniproje/BaytechBackend/obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.BaytechBackend.props
+C:/Users/Monster/Desktop/yeniproje/BaytechBackend/obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.BaytechBackend.props
+C:/Users/Monster/Desktop/yeniproje/BaytechBackend/obj/Debug/net7.0/staticwebassets.pack.json
+C:/Users/Monster/Desktop/yeniproje/BaytechBackend/obj/Debug/net7.0/staticwebassets.build.json
+C:/Users/Monster/Desktop/yeniproje/BaytechBackend/obj/Debug/net7.0/staticwebassets.development.json
+C:/Users/Monster/Desktop/yeniproje/BaytechBackend/obj/Debug/net7.0/scopedcss/bundle/BaytechBackend.styles.css
+C:/Users/Monster/Desktop/yeniproje/BaytechBackend/obj/Debug/net7.0/BaytechBackend.csproj.CopyComplete
+C:/Users/Monster/Desktop/yeniproje/BaytechBackend/obj/Debug/net7.0/BaytechBackend.dll
+C:/Users/Monster/Desktop/yeniproje/BaytechBackend/obj/Debug/net7.0/refint/BaytechBackend.dll
+C:/Users/Monster/Desktop/yeniproje/BaytechBackend/obj/Debug/net7.0/BaytechBackend.pdb
+C:/Users/Monster/Desktop/yeniproje/BaytechBackend/obj/Debug/net7.0/BaytechBackend.genruntimeconfig.cache
+C:/Users/Monster/Desktop/yeniproje/BaytechBackend/obj/Debug/net7.0/ref/BaytechBackend.dll
+/Users/emremac/Desktop/Salih Emre Kocadere/Baytech/BaytechBackend/bin/Debug/net7.0/appsettings.Development.json
+/Users/emremac/Desktop/Salih Emre Kocadere/Baytech/BaytechBackend/bin/Debug/net7.0/appsettings.json
+/Users/emremac/Desktop/Salih Emre Kocadere/Baytech/BaytechBackend/bin/Debug/net7.0/BaytechBackend
+/Users/emremac/Desktop/Salih Emre Kocadere/Baytech/BaytechBackend/bin/Debug/net7.0/BaytechBackend.deps.json
+/Users/emremac/Desktop/Salih Emre Kocadere/Baytech/BaytechBackend/bin/Debug/net7.0/BaytechBackend.runtimeconfig.json
+/Users/emremac/Desktop/Salih Emre Kocadere/Baytech/BaytechBackend/bin/Debug/net7.0/BaytechBackend.dll
+/Users/emremac/Desktop/Salih Emre Kocadere/Baytech/BaytechBackend/bin/Debug/net7.0/BaytechBackend.pdb
+/Users/emremac/Desktop/Salih Emre Kocadere/Baytech/BaytechBackend/bin/Debug/net7.0/Humanizer.dll
+/Users/emremac/Desktop/Salih Emre Kocadere/Baytech/BaytechBackend/bin/Debug/net7.0/Microsoft.AspNet.SignalR.Core.dll
+/Users/emremac/Desktop/Salih Emre Kocadere/Baytech/BaytechBackend/bin/Debug/net7.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+/Users/emremac/Desktop/Salih Emre Kocadere/Baytech/BaytechBackend/bin/Debug/net7.0/Microsoft.AspNetCore.OpenApi.dll
+/Users/emremac/Desktop/Salih Emre Kocadere/Baytech/BaytechBackend/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.dll
+/Users/emremac/Desktop/Salih Emre Kocadere/Baytech/BaytechBackend/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/Users/emremac/Desktop/Salih Emre Kocadere/Baytech/BaytechBackend/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Design.dll
+/Users/emremac/Desktop/Salih Emre Kocadere/Baytech/BaytechBackend/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Relational.dll
+/Users/emremac/Desktop/Salih Emre Kocadere/Baytech/BaytechBackend/bin/Debug/net7.0/Microsoft.Extensions.DependencyModel.dll
+/Users/emremac/Desktop/Salih Emre Kocadere/Baytech/BaytechBackend/bin/Debug/net7.0/Microsoft.OpenApi.dll
+/Users/emremac/Desktop/Salih Emre Kocadere/Baytech/BaytechBackend/bin/Debug/net7.0/Microsoft.Owin.dll
+/Users/emremac/Desktop/Salih Emre Kocadere/Baytech/BaytechBackend/bin/Debug/net7.0/Microsoft.Owin.Security.dll
+/Users/emremac/Desktop/Salih Emre Kocadere/Baytech/BaytechBackend/bin/Debug/net7.0/Mono.TextTemplating.dll
+/Users/emremac/Desktop/Salih Emre Kocadere/Baytech/BaytechBackend/bin/Debug/net7.0/Newtonsoft.Json.dll
+/Users/emremac/Desktop/Salih Emre Kocadere/Baytech/BaytechBackend/bin/Debug/net7.0/Npgsql.dll
+/Users/emremac/Desktop/Salih Emre Kocadere/Baytech/BaytechBackend/bin/Debug/net7.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll
+/Users/emremac/Desktop/Salih Emre Kocadere/Baytech/BaytechBackend/bin/Debug/net7.0/Owin.dll
+/Users/emremac/Desktop/Salih Emre Kocadere/Baytech/BaytechBackend/bin/Debug/net7.0/Swashbuckle.AspNetCore.Swagger.dll
+/Users/emremac/Desktop/Salih Emre Kocadere/Baytech/BaytechBackend/bin/Debug/net7.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/emremac/Desktop/Salih Emre Kocadere/Baytech/BaytechBackend/bin/Debug/net7.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/Users/emremac/Desktop/Salih Emre Kocadere/Baytech/BaytechBackend/bin/Debug/net7.0/System.CodeDom.dll
+/Users/emremac/Desktop/Salih Emre Kocadere/Baytech/BaytechBackend/bin/Debug/net7.0/System.Net.WebSockets.WebSocketProtocol.dll
+/Users/emremac/Desktop/Salih Emre Kocadere/Baytech/BaytechBackend/obj/Debug/net7.0/BaytechBackend.csproj.AssemblyReference.cache
+/Users/emremac/Desktop/Salih Emre Kocadere/Baytech/BaytechBackend/obj/Debug/net7.0/BaytechBackend.GeneratedMSBuildEditorConfig.editorconfig
+/Users/emremac/Desktop/Salih Emre Kocadere/Baytech/BaytechBackend/obj/Debug/net7.0/BaytechBackend.AssemblyInfoInputs.cache
+/Users/emremac/Desktop/Salih Emre Kocadere/Baytech/BaytechBackend/obj/Debug/net7.0/BaytechBackend.AssemblyInfo.cs
+/Users/emremac/Desktop/Salih Emre Kocadere/Baytech/BaytechBackend/obj/Debug/net7.0/BaytechBackend.csproj.CoreCompileInputs.cache
+/Users/emremac/Desktop/Salih Emre Kocadere/Baytech/BaytechBackend/obj/Debug/net7.0/BaytechBackend.MvcApplicationPartsAssemblyInfo.cs
+/Users/emremac/Desktop/Salih Emre Kocadere/Baytech/BaytechBackend/obj/Debug/net7.0/BaytechBackend.MvcApplicationPartsAssemblyInfo.cache
+/Users/emremac/Desktop/Salih Emre Kocadere/Baytech/BaytechBackend/obj/Debug/net7.0/staticwebassets/msbuild.BaytechBackend.Microsoft.AspNetCore.StaticWebAssets.props
+/Users/emremac/Desktop/Salih Emre Kocadere/Baytech/BaytechBackend/obj/Debug/net7.0/staticwebassets/msbuild.build.BaytechBackend.props
+/Users/emremac/Desktop/Salih Emre Kocadere/Baytech/BaytechBackend/obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.BaytechBackend.props
+/Users/emremac/Desktop/Salih Emre Kocadere/Baytech/BaytechBackend/obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.BaytechBackend.props
+/Users/emremac/Desktop/Salih Emre Kocadere/Baytech/BaytechBackend/obj/Debug/net7.0/staticwebassets.pack.json
+/Users/emremac/Desktop/Salih Emre Kocadere/Baytech/BaytechBackend/obj/Debug/net7.0/staticwebassets.build.json
+/Users/emremac/Desktop/Salih Emre Kocadere/Baytech/BaytechBackend/obj/Debug/net7.0/staticwebassets.development.json
+/Users/emremac/Desktop/Salih Emre Kocadere/Baytech/BaytechBackend/obj/Debug/net7.0/scopedcss/bundle/BaytechBackend.styles.css
+/Users/emremac/Desktop/Salih Emre Kocadere/Baytech/BaytechBackend/obj/Debug/net7.0/BaytechBackend.csproj.CopyComplete
+/Users/emremac/Desktop/Salih Emre Kocadere/Baytech/BaytechBackend/obj/Debug/net7.0/BaytechBackend.dll
+/Users/emremac/Desktop/Salih Emre Kocadere/Baytech/BaytechBackend/obj/Debug/net7.0/refint/BaytechBackend.dll
+/Users/emremac/Desktop/Salih Emre Kocadere/Baytech/BaytechBackend/obj/Debug/net7.0/BaytechBackend.pdb
+/Users/emremac/Desktop/Salih Emre Kocadere/Baytech/BaytechBackend/obj/Debug/net7.0/BaytechBackend.genruntimeconfig.cache
+/Users/emremac/Desktop/Salih Emre Kocadere/Baytech/BaytechBackend/obj/Debug/net7.0/ref/BaytechBackend.dll

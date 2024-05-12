@@ -120,15 +120,25 @@ namespace BaytechBackend
 
         public List<Group> ReturnGroups(int userId)
         {
-            List<Group> users = new List<Group>();
+            List<Group> groups = new List<Group>();
             var groupUsers = _dbContext.GroupUsers.Include(x => x.Group).Where(x => x.UserId == userId).ToList();
             foreach (var groupUser in groupUsers)
             {
-                users.Add(groupUser.Group);
+                groups.Add(groupUser.Group);
             }
          
            
-            return users;
+            return groups;
+        }
+
+
+
+
+
+
+        public int ReturnId(string username)
+        {
+            return _userManager.FindByNameAsync(username).Id;
         }
     }
 }
