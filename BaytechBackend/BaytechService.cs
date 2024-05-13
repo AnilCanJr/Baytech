@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Net.Http;
+using System.Text;
 using BaytechBackend.DTO_s;
 using BaytechBackend.DTOs;
 using BaytechBackend.Entities;
@@ -132,13 +134,36 @@ namespace BaytechBackend
         }
 
 
-
-
-
-
         public int ReturnId(string username)
         {
             return _userManager.FindByNameAsync(username).Id;
+        }
+
+
+        public async Task<string> GeminiAsync(string username)
+        {
+               HttpClient client = new HttpClient();
+            client.BaseAddress = new Uri("https://generativelanguage.googleapis.com");
+            string jsonContent = "{\"contents\":{\"parts\":{\"text\":\"" + username + "\"}}}";
+            var content = new StringContent(jsonContent, Encoding.UTF8, "application/json");
+             HttpResponseMessage response = await client.PostAsync("v1beta/models/gemini-pro:generateContent?key=AIzaSyAippx48rfTZCxRy1h7AHO1jUCOQQzPf_k",content);
+
+            return await response.Content.ReadAsStringAsync();
+
+
+            //return _userManager.FindByNameAsync(username).Id;
+        }
+
+
+        public List<Object> returnabc (string name)
+        {
+            List<Object> list = new List<object>();
+            var usersWithName = _dbContext.Users.Where(u => u.UserName.Contains(name)).ToList();
+            var groupsWithName = _dbContext.Groups.Where(u => u.Name.Contains(name)).ToList();
+
+            list.AddRange(usersWithName);
+            list.AddRange(groupsWithName);
+            return list;
         }
     }
 }

@@ -79,9 +79,19 @@ namespace BaytechBackend.Controllers
 
         }
 
+        [HttpPost("Gemini")]
+        public async Task<string> Gemini([FromBody] string message)
+        {
+            return await _baytechService.GeminiAsync(message);
+        }
 
 
 
+        [HttpPost("returnabc")]
+        public  List<Object> returnabc([FromBody] string message)
+        {
+            return  _baytechService.returnabc(message);
+        }
 
     }
 }
