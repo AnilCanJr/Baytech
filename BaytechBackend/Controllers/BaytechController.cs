@@ -24,17 +24,17 @@ namespace BaytechBackend.Controllers
         [HttpPost("SignUp")]
         public async Task SignUp(SignUpDTO dto)
         {
-            Response.Cookies.Append("Id", "emrekocadere", _options);
+
             await _baytechService.SignUp(dto);
         }
 
         [HttpPost("SignIn")]
-        public async Task<Microsoft.AspNetCore.Identity.SignInResult> SignIn(SignInDTO dto)
+        public async Task<UserCookieDTO> SignIn(SignInDTO dto)
         {
-            _options.Expires = DateTime.Now.AddDays(1);
-            Response.Cookies.Append("SomeCookie", "asdasd", _options);
+
             
             var resultr =await _baytechService.SignIn(dto);
+ 
 
             return resultr;
         }
@@ -80,17 +80,17 @@ namespace BaytechBackend.Controllers
         }
 
         [HttpPost("Gemini")]
-        public async Task<string> Gemini([FromBody] string message)
+        public async Task<string> Gemini(GeminiDTO message)
         {
-            return await _baytechService.GeminiAsync(message);
+            return await _baytechService.GeminiAsync(message.Message);
         }
 
 
 
         [HttpPost("returnabc")]
-        public  List<Object> returnabc([FromBody] string message)
+        public  List<Object> returnabc(SearchDTO message)
         {
-            return  _baytechService.returnabc(message);
+            return  _baytechService.returnabc(message.Search);
         }
 
     }

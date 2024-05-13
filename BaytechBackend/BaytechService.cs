@@ -48,11 +48,23 @@ namespace BaytechBackend
             }
         }
 
-        public async Task<SignInResult> SignIn(SignInDTO dto)
+        public async Task<UserCookieDTO> SignIn(SignInDTO dto)
         {
-            
+
+            UserCookieDTO cookie=new UserCookieDTO();
             var signInResult = await _SignInManager.PasswordSignInAsync(dto.Username, dto.Password, false, false);
-            return signInResult;
+            if(signInResult.Succeeded==true)
+            {
+                var user =await _userManager.FindByNameAsync(dto.Username);
+
+                 cookie = new UserCookieDTO() {
+                    Id = user.Id,
+                    UserName = user.UserName,
+                    Email = user.Email
+                    
+                };
+            }
+            return cookie;
         }
 
         public void ChangePrefrences(PreferenceDTO dto)
