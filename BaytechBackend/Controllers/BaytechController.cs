@@ -31,10 +31,8 @@ namespace BaytechBackend.Controllers
         [HttpPost("SignIn")]
         public async Task<UserCookieDTO> SignIn(SignInDTO dto)
         {
-
             
             var resultr =await _baytechService.SignIn(dto);
- 
 
             return resultr;
         }
