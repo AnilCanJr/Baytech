@@ -21,7 +21,7 @@ namespace BaytechBackend
         public DbSet<Notification> Notificationes { get; set; }
         public DbSet<NotificationType> NotificationTypes { get; set; }
         public DbSet<Prefernce> Prefernces { get; set; }
-       // DbSet<User> Users { get; set; }
+       //  public DbSet<User> Users { get; set; }
 
     }
 }

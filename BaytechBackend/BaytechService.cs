@@ -22,9 +22,9 @@ namespace BaytechBackend
 
         }
 
-        public async Task SignUp(SignUpDTO dto)
+        public async Task<UserCookieDTO> SignUp(SignUpDTO dto)
         {
-
+            UserCookieDTO cookie = new UserCookieDTO();
             User newUser = new()
             {
                 UserName = dto.Username,
@@ -45,27 +45,44 @@ namespace BaytechBackend
                     }
                     );
                 _dbContext.SaveChanges();
+
+                cookie = new UserCookieDTO()
+                {
+                    Id = user.Id,
+                    UserName = user.UserName,
+                    Email = user.Email
+
+                };
+                return cookie;
             }
+            else
+            {
+                return cookie;
+            }
+         
         }
 
         public async Task<UserCookieDTO> SignIn(SignInDTO dto)
         {
 
-            UserCookieDTO cookie=new UserCookieDTO();
+            UserCookieDTO cookie = new UserCookieDTO();
             var signInResult = await _SignInManager.PasswordSignInAsync(dto.Username, dto.Password, false, false);
-            if(signInResult.Succeeded==true)
+            if (signInResult.Succeeded == true)
             {
-                var user =await _userManager.FindByNameAsync(dto.Username);
+                var user = await _userManager.FindByNameAsync(dto.Username);
 
-                 cookie = new UserCookieDTO() {
+                cookie = new UserCookieDTO()
+                {
                     Id = user.Id,
                     UserName = user.UserName,
                     Email = user.Email
-                    
+
                 };
+                return cookie;
             }
             return cookie;
         }
+            
 
         public void ChangePrefrences(PreferenceDTO dto)
         {
@@ -176,6 +193,25 @@ namespace BaytechBackend
             list.AddRange(usersWithName);
             list.AddRange(groupsWithName);
             return list;
+        }
+
+
+        public void Exit(int ıd)
+        {
+     
+
+            var user= _dbContext.Users.Where(x => x.Id == ıd).FirstOrDefault();
+            user.IsOnline = false;
+            _dbContext.SaveChanges();
+        }
+
+
+
+        public void ChangeName(ChangeNameDTO dto)
+        {
+            var user = _dbContext.Users.Where(x => x.Id == dto.Id).FirstOrDefault();
+            user.UserName = dto.Username;
+            _dbContext.SaveChanges();
         }
     }
 }

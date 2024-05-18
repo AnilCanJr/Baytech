@@ -3463,27 +3463,26 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Monster\\.nuget\\packages\\": {}
+    "/Users/emremac/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Monster\\Desktop\\yeniproje\\BaytechBackend\\BaytechBackend.csproj",
+      "projectUniqueName": "/Users/emremac/Desktop/Salih Emre Kocadere/Baytech/BaytechBackend/BaytechBackend.csproj",
       "projectName": "BaytechBackend",
-      "projectPath": "C:\\Users\\Monster\\Desktop\\yeniproje\\BaytechBackend\\BaytechBackend.csproj",
-      "packagesPath": "C:\\Users\\Monster\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Monster\\Desktop\\yeniproje\\BaytechBackend\\obj\\",
+      "projectPath": "/Users/emremac/Desktop/Salih Emre Kocadere/Baytech/BaytechBackend/BaytechBackend.csproj",
+      "packagesPath": "/Users/emremac/.nuget/packages/",
+      "outputPath": "/Users/emremac/Desktop/Salih Emre Kocadere/Baytech/BaytechBackend/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Monster\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/emremac/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://pkgs.dev.azure.com/Vsionsoft/Analision/_packaging/AvoCoreNugetPackages/nuget/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
@@ -3559,7 +3558,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.405/RuntimeIdentifierGraph.json"
       }
     }
   },

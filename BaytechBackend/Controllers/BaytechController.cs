@@ -22,19 +22,30 @@ namespace BaytechBackend.Controllers
         }
         
         [HttpPost("SignUp")]
-        public async Task SignUp(SignUpDTO dto)
+        public async Task<ActionResult> SignUp(SignUpDTO dto)
         {
 
-            await _baytechService.SignUp(dto);
+           var result= await _baytechService.SignUp(dto);
+            if (result.Id == 0)
+            {
+                return BadRequest(result);
+            }
+
+            return Ok(result);
+
         }
 
         [HttpPost("SignIn")]
-        public async Task<UserCookieDTO> SignIn(SignInDTO dto)
+        public async  Task<ActionResult>  SignIn(SignInDTO dto)
         {
             
-            var resultr =await _baytechService.SignIn(dto);
+            var result =await _baytechService.SignIn(dto);
+            if(result.Id==0)
+            {
+                return BadRequest(result);
+            }
 
-            return resultr;
+            return Ok(result);
         }
 
 
@@ -89,6 +100,20 @@ namespace BaytechBackend.Controllers
         public  List<Object> returnabc(SearchDTO message)
         {
             return  _baytechService.returnabc(message.Search);
+        }
+
+
+
+        [HttpPost("exit")]
+        public void Exit(IdDTO Id)
+        {
+             _baytechService.Exit(Id.Id);
+        }
+
+        [HttpPost("ChangeName")]
+        public void ChangeName(ChangeNameDTO dto)
+        {
+            _baytechService.ChangeName(dto);
         }
 
     }

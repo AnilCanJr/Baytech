@@ -48,7 +48,7 @@ if (app.Environment.IsDevelopment())
 app.UseCors("AllowSpecificOrigins");
 
 app.MapHub<ChatHub>("/chat");
-
+app.MapHub<ChatHubb>("/chathub");
 
 //app.UseEndpoints(endpoints =>
 //{
