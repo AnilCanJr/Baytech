@@ -116,6 +116,28 @@ namespace BaytechBackend.Controllers
             _baytechService.ChangeName(dto);
         }
 
+
+
+        [HttpPost("upload")]
+        public async Task<IActionResult> Upload(IFormFile file, string path)
+        {
+            if (file == null || file.Length == 0)
+            {
+                return BadRequest("Yüklemek için bir dosya seçin.");
+            }
+
+            var fileName = Path.GetFileName(file.FileName);
+            var filePath = path;
+
+            using (var stream = new FileStream(filePath, FileMode.Create))
+            {
+                await file.CopyToAsync(stream);
+            }
+
+            return Ok(new { FilePath = filePath });
+        }
+
+
     }
 }
 
