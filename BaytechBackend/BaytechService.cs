@@ -70,6 +70,8 @@ namespace BaytechBackend
             if (signInResult.Succeeded == true)
             {
                 var user = await _userManager.FindByNameAsync(dto.Username);
+                user.IsOnline = true;
+                _dbContext.SaveChanges();
 
                 cookie = new UserCookieDTO()
                 {
