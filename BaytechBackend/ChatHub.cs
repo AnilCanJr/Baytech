@@ -72,7 +72,7 @@ namespace BaytechBackend
             if (_connections.TryGetValue(Context.ConnectionId, out UserConnection userConnection))
             {
                 await Clients.Group(userConnection.Room).SendAsync("ReceiveMessage", userConnection.User, message);
-                SendUsersConnected("team44");
+                
                 
             }
         }
