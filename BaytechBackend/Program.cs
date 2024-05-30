@@ -30,6 +30,7 @@ builder.Services.AddSingleton<IDictionary<string, UserConnection>>(opts => new D
 builder.Services.AddSignalR();
 builder.Services.AddScoped<BaytechService>();
 
+
 builder.Services.Configure<CookiePolicyOptions>(options =>
 {
     options.CheckConsentNeeded = context => true;

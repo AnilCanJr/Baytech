@@ -7,6 +7,7 @@ namespace BaytechBackend.Entities
 	{
 		public DateTime LastSeen { get; set; }
         public bool IsOnline { get; set; }
+		public string? ConnectionId { get; set; }
     }
 }
 

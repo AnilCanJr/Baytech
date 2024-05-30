@@ -4,7 +4,9 @@ using System.Text;
 using BaytechBackend.DTO_s;
 using BaytechBackend.DTOs;
 using BaytechBackend.Entities;
+using Microsoft.AspNet.SignalR.Hubs;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.SignalR;
 using Microsoft.EntityFrameworkCore;
 
 namespace BaytechBackend
@@ -14,12 +16,15 @@ namespace BaytechBackend
 		private BaytechDbContext _dbContext;
         private UserManager<User> _userManager;
         private SignInManager <User> _SignInManager;
-        public BaytechService(BaytechDbContext dbContext,UserManager<User>userManager,SignInManager<User>signInManager)
+
+        private IHubContext<ChatHubb> _hubContext;
+
+        public BaytechService(BaytechDbContext dbContext,UserManager<User>userManager,SignInManager<User>signInManager, IHubContext<ChatHubb> hubContext)
 		{
 			_dbContext = dbContext;
             _userManager = userManager;
             _SignInManager = signInManager;
-
+            _hubContext = hubContext;
         }
 
         public async Task<UserCookieDTO> SignUp(SignUpDTO dto)
@@ -97,6 +102,47 @@ namespace BaytechBackend
 
         }
 
+        public void AddFriend(FriendRequestDTO dto)
+        {
+            var friend = new Friend()
+            {
+                UserOneId = dto.UserOneId,
+                UserTwoId = dto.UserTwoId
+            };
+
+            _dbContext.Friends.Add(friend);
+            _dbContext.SaveChanges();
+
+            //send signalR notification
+            AddNatifications(new NotificationDTO
+            {
+                ClientUserId = dto.UserOneId,
+                TargetUserId = dto.UserTwoId,
+                NotificationTypeId = 1
+            });
+
+            var user = _dbContext.Users.FirstOrDefault(z => z.Id == dto.UserTwoId);
+            if (user != null && !string.IsNullOrEmpty(user.ConnectionId))
+            {
+                 _hubContext.Clients.Client(user.ConnectionId).SendAsync("Notify", "You have a new friend request");
+            }
+
+
+        }
+
+        public void RemoveFriend(FriendRequestDTO dto)
+        {
+             var friend = _dbContext.Friends.FirstOrDefault(x => x.UserOneId == dto.UserOneId && x.UserTwoId == dto.UserTwoId);
+             if (friend != null) _dbContext.Friends.Remove(friend);
+             _dbContext.SaveChanges();
+        }
+
+        public List<Friend> GetFriends(IdDTO userId)
+        {
+            var friends = _dbContext.Friends.Include(z => z.UserOne).Include(z => z.UserTwo).Where(x => x.UserOneId == userId.Id ||  x.UserTwoId == userId.Id).ToList();
+            return friends;
+        }   
+
         public void AddNatifications(NotificationDTO dto)
         {
             var notification = new Notification()
@@ -112,6 +158,12 @@ namespace BaytechBackend
             _dbContext.SaveChanges();
         }
 
+
+        public List<Notification> GetNotifications(IdDTO userId)
+        {
+            var notifications = _dbContext.Notificationes.Include(z => z.NotificationType).Where(x => x.TargetUserId == userId.Id).ToList();
+            return notifications;
+        }   
 
         public void AddFriendship(int notificationId)
         {

@@ -1,27 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "/Users/emremac/Desktop/Salih Emre Kocadere/Baytech/BaytechBackend/BaytechBackend.csproj": {}
+    "D:\\Projects\\Baytech\\BaytechBackend\\BaytechBackend.csproj": {}
   },
   "projects": {
-    "/Users/emremac/Desktop/Salih Emre Kocadere/Baytech/BaytechBackend/BaytechBackend.csproj": {
+    "D:\\Projects\\Baytech\\BaytechBackend\\BaytechBackend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/emremac/Desktop/Salih Emre Kocadere/Baytech/BaytechBackend/BaytechBackend.csproj",
+        "projectUniqueName": "D:\\Projects\\Baytech\\BaytechBackend\\BaytechBackend.csproj",
         "projectName": "BaytechBackend",
-        "projectPath": "/Users/emremac/Desktop/Salih Emre Kocadere/Baytech/BaytechBackend/BaytechBackend.csproj",
-        "packagesPath": "/Users/emremac/.nuget/packages/",
-        "outputPath": "/Users/emremac/Desktop/Salih Emre Kocadere/Baytech/BaytechBackend/obj/",
+        "projectPath": "D:\\Projects\\Baytech\\BaytechBackend\\BaytechBackend.csproj",
+        "packagesPath": "C:\\Users\\Humza\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\Baytech\\BaytechBackend\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "/Users/emremac/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Humza\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "https://api.nuget.org/v3/index.json": {},
-          "https://pkgs.dev.azure.com/Vsionsoft/Analision/_packaging/AvoCoreNugetPackages/nuget/v3/index.json": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
@@ -97,7 +101,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.405/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

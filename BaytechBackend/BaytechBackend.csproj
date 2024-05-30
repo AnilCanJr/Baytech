@@ -27,7 +27,4 @@
     <None Remove="Entities\" />
     <None Remove="DTO%27s\" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Entities\" />
-  </ItemGroup>
 </Project>

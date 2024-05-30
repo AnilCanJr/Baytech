@@ -18,6 +18,7 @@ namespace BaytechBackend
         public DbSet<Friend> Friends { get; set; }
         public DbSet<Group> Groups { get; set; }
         public DbSet<GroupUser> GroupUsers { get; set; }
+        public DbSet<GroupMessage> GroupMessages { get; set; }
         public DbSet<Notification> Notificationes { get; set; }
         public DbSet<NotificationType> NotificationTypes { get; set; }
         public DbSet<Prefernce> Prefernces { get; set; }

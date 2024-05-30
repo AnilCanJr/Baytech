@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BaytechBackend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c1a32b1300b90510c45e22834a18dcc8c53d6f99")]
 [assembly: System.Reflection.AssemblyProductAttribute("BaytechBackend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BaytechBackend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

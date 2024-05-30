@@ -71,8 +71,28 @@ namespace BaytechBackend.Controllers
 
         //}
 
+
+        [HttpPost("AddFriend")]
+        public void AddFriend(FriendRequestDTO dto)
+        {
+            _baytechService.AddFriend(dto);
+        }
+
+        [HttpPost("RemoveFriend")]
+        public void RemoveFriend(FriendRequestDTO dto)
+        {
+            _baytechService.RemoveFriend(dto);
+        }
+
        
-        
+        [HttpPost("GetFriends")]
+        public List<Friend> GetFriends(IdDTO id)
+        {
+            return _baytechService.GetFriends(id);
+        }
+
+
+
         [HttpPost("ReturnFriends")]
         public List<User> ReturnFriends(IdDTO id)
         {
