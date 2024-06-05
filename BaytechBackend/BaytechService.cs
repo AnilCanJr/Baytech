@@ -267,6 +267,21 @@ namespace BaytechBackend
             user.UserName = dto.Username;
             _dbContext.SaveChanges();
         }
+
+
+
+        
+
+         public List<Chat> GetMessages(MessagesDTO dto)
+        {
+
+            var messages = _dbContext.Chats.Where(x => x.SenderUsername == dto.UserOneName).Where(x=>x.ReceiverUsername==dto.UserTwoName).ToList();
+            var messages2 = _dbContext.Chats.Where(x => x.SenderUsername == dto.UserTwoName).Where(x => x.ReceiverUsername == dto.UserOneName).ToList();
+            messages.AddRange(messages2);
+             messages= messages.OrderBy(x=>x.Timestamp).ToList();
+            return messages;
+        }
+
     }
 }
 

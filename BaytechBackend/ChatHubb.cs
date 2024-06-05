@@ -5,6 +5,7 @@ using Microsoft.AspNet.SignalR.Messaging;
 using Microsoft.AspNetCore.Components.Routing;
 using Microsoft.AspNetCore.SignalR;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Primitives;
 
 namespace BaytechBackend
 {
@@ -18,16 +19,17 @@ namespace BaytechBackend
             _context = context;
         }
 
-        public override Task OnConnectedAsync()
+        public override Task OnConnectedAsync()// ok
         {
 
             var connectionId = Context.ConnectionId;
-            var username = Context.GetHttpContext().Request.Query["username"];
-            
+            // var username = Context.GetHttpContext().Request.Query["username"];
+            StringValues usernameValues = Context.GetHttpContext().Request.Query["username"];
 
-           
+            string username = usernameValues.FirstOrDefault();
 
-            ConnectedUsers.TryAdd(Context.ConnectionId, username);
+
+            ConnectedUsers.TryAdd(username, Context.ConnectionId);
 
 
             var user = _context.Users.FirstOrDefault(x => x.UserName == username);
@@ -63,7 +65,7 @@ namespace BaytechBackend
      
 
         //private message one to one
-        public async Task SendPrivateMessage(string toUser, String msg)
+        public async Task SendPrivateMessage(string toUser, string msg)
         {
 
             
@@ -76,13 +78,14 @@ namespace BaytechBackend
                     SenderUsername = senderUsername,
                     ReceiverUsername = toUser,
                     Message = msg,
-                    Timestamp = DateTime.Now
+                    Timestamp = DateTime.UtcNow
+                    
                 };
 
                 _context.Chats.Add(newMessage);
-                await _context.SaveChangesAsync();
+                 _context.SaveChanges();
                 await Clients.Client(connectionId).SendAsync("ReceiveMessage", msg);
-                await Clients.Client(connectionId).SendAsync("Notify", "You have a new message.");
+               // await Clients.Client(connectionId).SendAsync("Notify", "You have a new message.");
 
             }
 

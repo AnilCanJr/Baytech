@@ -137,6 +137,13 @@ namespace BaytechBackend.Controllers
         }
 
 
+        [HttpPost("GetMessages")]
+        public List<Chat> GetMessages(MessagesDTO dto)
+        {
+           return _baytechService.GetMessages(dto);
+        }
+
+
 
         [HttpPost("upload")]
         public async Task<IActionResult> Upload(IFormFile file, string path)
