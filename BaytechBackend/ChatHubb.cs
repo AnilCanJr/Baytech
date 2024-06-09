@@ -67,12 +67,10 @@ namespace BaytechBackend
         //private message one to one
         public async Task SendPrivateMessage(string toUser, string msg)
         {
-
-            
+            String senderUsername  = ConnectedUsers.FirstOrDefault(x => x.Value == Context.ConnectionId).Key;
             if (ConnectedUsers.TryGetValue(toUser, out var connectionId))
             {
-                var senderUsername = ConnectedUsers.FirstOrDefault(x => x.Value == Context.ConnectionId).Key;
-
+               
                 var newMessage = new Chat
                 {
                     SenderUsername = senderUsername,
@@ -87,6 +85,19 @@ namespace BaytechBackend
                 await Clients.Client(connectionId).SendAsync("ReceiveMessage", msg);
                // await Clients.Client(connectionId).SendAsync("Notify", "You have a new message.");
 
+            }
+            else
+            {
+                var newMessage = new Chat
+                {
+                    SenderUsername = senderUsername,
+                    ReceiverUsername = toUser,
+                    Message = msg,
+                    Timestamp = DateTime.UtcNow
+
+                };
+                _context.Chats.Add(newMessage);
+                _context.SaveChanges();
             }
 
 

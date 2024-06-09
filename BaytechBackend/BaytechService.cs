@@ -5,9 +5,11 @@ using BaytechBackend.DTO_s;
 using BaytechBackend.DTOs;
 using BaytechBackend.Entities;
 using Microsoft.AspNet.SignalR.Hubs;
+using Microsoft.AspNetCore.Components.Routing;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.SignalR;
 using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json.Linq;
 
 namespace BaytechBackend
 {
@@ -137,6 +139,8 @@ namespace BaytechBackend
              _dbContext.SaveChanges();
         }
 
+
+
         public List<Friend> GetFriends(IdDTO userId)
         {
             var friends = _dbContext.Friends.Include(z => z.UserOne).Include(z => z.UserTwo).Where(x => x.UserOneId == userId.Id ||  x.UserTwoId == userId.Id).ToList();
@@ -238,6 +242,52 @@ namespace BaytechBackend
         }
 
 
+
+        public async Task<string> PrivateGemini(GeminiDTO dto)
+        {
+            HttpClient client = new HttpClient();
+            client.BaseAddress = new Uri("https://generativelanguage.googleapis.com");
+            string jsonContent = "{\"contents\":{\"parts\":{\"text\":\"" + dto.Message + "\"}}}";
+            var content = new StringContent(jsonContent, Encoding.UTF8, "application/json");
+            HttpResponseMessage response = await client.PostAsync("v1beta/models/gemini-pro:generateContent?key=AIzaSyAippx48rfTZCxRy1h7AHO1jUCOQQzPf_k", content);
+
+            JObject json = JObject.Parse(await response.Content.ReadAsStringAsync());
+
+            string text = json["candidates"]?[0]?["content"]?["parts"]?[0]?["text"]?.ToString();
+
+            var newMessage = new Chat
+            {
+                SenderUsername = dto.Username,
+                ReceiverUsername = "Gemini",
+                Message = dto.Message,
+                Timestamp = DateTime.UtcNow
+
+            };
+            _dbContext.Chats.Add(newMessage);
+            _dbContext.SaveChanges();
+
+            var newMessage1 = new Chat
+            {
+                SenderUsername = "Gemini",
+                ReceiverUsername = dto.Username,
+                Message = text,
+                Timestamp = DateTime.UtcNow
+
+                
+
+        };
+            _dbContext.Chats.Add(newMessage1);
+            _dbContext.SaveChanges();
+
+
+
+            return await response.Content.ReadAsStringAsync();
+
+
+            //return _userManager.FindByNameAsync(username).Id;
+        }
+
+
         public List<Object> returnabc (string name)
         {
             List<Object> list = new List<object>();
@@ -267,10 +317,6 @@ namespace BaytechBackend
             user.UserName = dto.Username;
             _dbContext.SaveChanges();
         }
-
-
-
-        
 
          public List<Chat> GetMessages(MessagesDTO dto)
         {

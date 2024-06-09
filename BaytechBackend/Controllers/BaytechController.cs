@@ -114,6 +114,13 @@ namespace BaytechBackend.Controllers
             return await _baytechService.GeminiAsync(message.Message);
         }
 
+        [HttpPost("PrivateGemini")]
+        public async Task<string> PrivateGemini(GeminiDTO message)
+        {
+            return await _baytechService.PrivateGemini(message);
+        }
+
+
 
 
         [HttpPost("returnabc")]
