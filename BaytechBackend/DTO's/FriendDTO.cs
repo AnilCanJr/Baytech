@@ -2,12 +2,12 @@
 {
     public class FriendRequestDTO
     {
-        public int UserOneId
+        public string Username1
         {
             get; set;
         }
 
-        public int UserTwoId
+        public string Username2
         {
             get; set;
         }

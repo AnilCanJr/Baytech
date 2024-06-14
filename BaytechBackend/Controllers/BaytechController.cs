@@ -109,7 +109,7 @@ namespace BaytechBackend.Controllers
         }
 
         [HttpPost("Gemini")]
-        public async Task<string> Gemini(GeminiDTO message)
+        public async Task<string> Gemini(GeminiiDTO message)
         {
             return await _baytechService.GeminiAsync(message.Message);
         }

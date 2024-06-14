@@ -106,37 +106,39 @@ namespace BaytechBackend
 
         public void AddFriend(FriendRequestDTO dto)
         {
+           var user1=_dbContext.Users.Where(x => x.UserName == dto.Username1).FirstOrDefault();
+            var user2 = _dbContext.Users.Where(x => x.UserName == dto.Username2).FirstOrDefault();
             var friend = new Friend()
             {
-                UserOneId = dto.UserOneId,
-                UserTwoId = dto.UserTwoId
+                UserOneId = user1.Id,
+                UserTwoId = user2.Id,
             };
 
             _dbContext.Friends.Add(friend);
             _dbContext.SaveChanges();
 
-            //send signalR notification
-            AddNatifications(new NotificationDTO
-            {
-                ClientUserId = dto.UserOneId,
-                TargetUserId = dto.UserTwoId,
-                NotificationTypeId = 1
-            });
+            ////send signalR notification
+            //AddNatifications(new NotificationDTO
+            //{
+            //    ClientUserId = dto.UserOneId,
+            //    TargetUserId = dto.UserTwoId,
+            //    NotificationTypeId = 1
+            //});
 
-            var user = _dbContext.Users.FirstOrDefault(z => z.Id == dto.UserTwoId);
-            if (user != null && !string.IsNullOrEmpty(user.ConnectionId))
-            {
-                 _hubContext.Clients.Client(user.ConnectionId).SendAsync("Notify", "You have a new friend request");
-            }
+            //var user = _dbContext.Users.FirstOrDefault(z => z.Id == dto.UserTwoId);
+            //if (user != null && !string.IsNullOrEmpty(user.ConnectionId))
+            //{
+            //     _hubContext.Clients.Client(user.ConnectionId).SendAsync("Notify", "You have a new friend request");
+            //}
 
 
         }
 
         public void RemoveFriend(FriendRequestDTO dto)
         {
-             var friend = _dbContext.Friends.FirstOrDefault(x => x.UserOneId == dto.UserOneId && x.UserTwoId == dto.UserTwoId);
-             if (friend != null) _dbContext.Friends.Remove(friend);
-             _dbContext.SaveChanges();
+             //var friend = _dbContext.Friends.FirstOrDefault(x => x.UserOneId == dto.UserOneId && x.UserTwoId == dto.UserTwoId);
+             //if (friend != null) _dbContext.Friends.Remove(friend);
+             //_dbContext.SaveChanges();
         }
 
 

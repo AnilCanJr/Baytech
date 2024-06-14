@@ -1,23 +1,39 @@
 ﻿<Properties StartupConfiguration="{7E51C1F7-E4AD-45B7-B9D3-9A045D02F562}|http">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
+  <MonoDevelop.Ide.ItemProperties.BaytechBackend PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/emremac/Desktop/Salih Emre Kocadere/Baytech/BaytechBackend/ChatHubb.cs" relfile="ChatHubb.cs" line="48" column="1" />
+      <Breakpoint file="/Users/emremac/Desktop/Salih Emre Kocadere/Baytech/BaytechBackend/ChatHubb.cs" relfile="ChatHubb.cs" line="108" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="BaytechService.cs">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="DTO's/FriendDTO.cs">
     <Files>
-      <File FileName="Controllers/BaytechController.cs" Line="123" Column="1" />
-      <File FileName="Program.cs" Line="14" Column="1" />
-      <File FileName="BaytechDbContext.cs" Line="13" Column="1" />
-      <File FileName="BaytechService.cs" Line="267" Column="38" />
-      <File FileName="DTO's/MessagesDTO.cs" Line="7" Column="1" />
-      <File FileName="Entities/Chat.cs" Line="10" Column="1" />
-      <File FileName="ChatHub.cs" Line="1" Column="1" />
-      <File FileName="DTO's/GeminiDTO.cs" Line="9" Column="1" />
+      <File FileName="Controllers/BaytechController.cs" />
+      <File FileName="Program.cs" />
+      <File FileName="BaytechDbContext.cs" />
+      <File FileName="DTO's/MessagesDTO.cs" />
+      <File FileName="Entities/Chat.cs" />
+      <File FileName="ChatHub.cs" />
+      <File FileName="ChatHubb.cs" />
+      <File FileName="appsettings.json" />
+      <File FileName=".gitignore" />
+      <File FileName="DTO's/SearchDTO.cs" />
+      <File FileName="WeatherForecast.cs" />
+      <File FileName="DTO's/GeminiiDTO.cs" />
+      <File FileName="DTO's/IdDTO.cs" />
+      <File FileName="DTO's/FriendDTO.cs" Line="3" Column="18" />
+      <File FileName="BaytechService.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="BaytechBackend">
-            <Node name="BaytechBackend">
-              <Node name="Entities" expanded="True" />
-              <Node name="BaytechService.cs" selected="True" />
+            <Node name="BaytechBackend" selected="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="DTO's" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -25,17 +41,12 @@
       <Pad Id="MonoDevelop.Debugger.WatchPad">
         <State>
           <Value>toUser</Value>
+          <Value>msg</Value>
+          <Value>exception</Value>
+          <Value>username</Value>
+          <Value>exception</Value>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/emremac/Desktop/Salih Emre Kocadere/Baytech/BaytechBackend/ChatHubb.cs" relfile="ChatHubb.cs" line="17" column="1" />
-      <Breakpoint file="/Users/emremac/Desktop/Salih Emre Kocadere/Baytech/BaytechBackend/ChatHubb.cs" relfile="ChatHubb.cs" line="23" column="1" />
-    </BreakpointStore>
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.BaytechBackend PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
-  <MultiItemStartupConfigurations />
 </Properties>

@@ -103,6 +103,20 @@ namespace BaytechBackend
 
         }
 
+
+        public async Task AddFriendNotify(string user, string usertwo)
+        {
+            if (ConnectedUsers.TryGetValue(usertwo, out var connectionId))
+            {
+
+                await Clients.Client(connectionId).SendAsync("Notify", $"{user} sent to you friend request .",user);
+            }
+
+                
+           
+               
+        }
+
         public async Task CreateGroup(string groupName)
         {
             var group = new Group
@@ -153,7 +167,9 @@ namespace BaytechBackend
             await Clients.Group(groupName).SendAsync("ReceiveGroupMessage", message);
             await Clients.Group(groupName).SendAsync("Notify", $"New message in group {groupName}.");
         }
-        
+
+
+
 
     }
 }
